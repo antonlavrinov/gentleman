@@ -1,0 +1,17 @@
+.button {
+    background: $black;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    width: 100%;
+    border: 1.5px solid $black;
+    transition: all 0.2s ease;
+    &:hover {
+        background: white;
+        color: $black;
+        
+    }
+}

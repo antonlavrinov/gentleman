@@ -1,0 +1,129 @@
+.footer {
+    position: static;
+    // font-family: Museo Sans, sans-serif;
+    background: $black;
+    // color: white !important ;
+    &__block {
+        display: flex;
+        // z-index: 3;
+        // position: absolute;
+        // top: 84%;
+        // left: 50%;
+        // transform: translateX(-50%);
+        margin: 0 auto;
+        font-weight: 300;
+        color: white;
+        width: 558px;
+        justify-content: space-between;
+        align-items: center;
+        height: 150px;
+        opacity: 0.8;
+    }
+}
+
+.creator {
+    display: flex;   
+    color: white;
+
+    svg {
+        margin-right: 5px;
+        color: white !important;
+        path {
+            color: white;
+        }
+
+    }
+
+
+    
+
+    &__link {
+        display: flex;
+        // font-family: Museo Sans, sans-serif;
+        border: 1px solid;
+        border-color: white;
+        border-radius: 5px;
+        padding: 15px 15px;
+        align-items: center;
+        color: white;
+        letter-spacing: 0.070rem;
+    }
+
+    &__name {
+        margin-left: 5px;
+        font-family: inherit;
+        color: white;
+    }
+
+        
+    &__small-font {
+        font-size: 12px;
+        font-family: inherit;
+        color: white;
+    }
+
+}
+
+
+.react-icon {
+    font-size: 18px;
+    width: 110px;
+    flex-direction: column;
+    color: white;
+
+
+
+    &__link {
+        display: flex;
+        color: white;
+        align-items: center;
+        // font-family: Museo Sans, sans-serif;
+        svg {
+            margin-right: 7px;
+            color: white !important;
+            path {
+                color: white;
+            }
+        }
+
+    }
+}
+
+.redux-icon {
+    font-size: 18px;
+    width: 98px;
+    flex-direction: column;
+    color: white;
+
+
+
+    &__link {
+        display: flex;
+        color: white;
+        align-items: center;
+        // font-family: Museo Sans, sans-serif;
+        svg {
+            margin-right: 7px;
+            color: white !important;
+            path {
+                color: white;
+            }
+        }
+
+    }
+}
+
+.firebase {
+
+    svg {
+        width: 130px;
+    }
+}
+
+.redux {
+
+    svg {
+        width: 130px;
+    }
+}
+

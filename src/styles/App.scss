@@ -1,0 +1,187 @@
+//import variables
+@import './base/_variables';
+@import './base/_fonts';
+
+
+
+
+
+html {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: .05em;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: $black;
+}
+
+input, input:hover, input:active, input:focus {
+    outline: none;
+}
+
+img {
+    align-self: start;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+div, p, a, span, input, form, button {
+    box-sizing: border-box;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
+}
+
+.container {
+    position: relative;
+}
+
+
+
+
+
+// a {
+//     display: block;
+// }
+
+
+// .button {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     min-width: 155px;
+//     height: 60px;
+//     border-radius: 8px;
+//     border: none;
+//     background: black;
+//     color: white;
+//     text-transform: uppercase;
+
+//     font-size: 18px;
+//     letter-spacing: .070em;
+//     padding: 5px;
+// }
+
+button {
+    border: none;
+    
+    &:focus {
+        outline: none
+    }
+    
+}
+
+
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: $light-grey-characters;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $light-grey-characters;
+}
+  
+::placeholder {
+    color: $light-grey-characters;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+#unblurred {
+    filter: blur(0px);
+}
+
+.additional-space {
+    height: 35px;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+//import blocks
+@import './blocks/_cart-icon';
+@import './blocks/_custom-button';
+@import './blocks/_filter';
+@import './blocks/_header';
+@import './blocks/_homepage';
+@import './blocks/_logo';
+@import './blocks/_product-item';
+@import './blocks/_products-list';
+@import './blocks/_search-field';
+@import './blocks/_slider';
+@import './blocks/_white-overlay';
+@import './blocks/_search-dropdown';
+@import './blocks/_signin-dropdown';
+@import './blocks/_google-button';
+@import './blocks/_form';
+@import './blocks/_checkbox';
+@import './blocks/_cart-popup';
+@import './blocks/_cart-item';
+@import './blocks/_overlay';
+@import './blocks/_sign-up-page';
+@import './blocks/_breadcrumbs';
+@import './blocks/_section-collection';
+@import './blocks/_catalog-collection';
+@import './blocks/_section-page';
+@import './blocks/_cart-page';
+@import './blocks/_catalog-page';
+@import './blocks/_product-page';
+@import './blocks/_footer';
+//import media
+@import './base/_media';

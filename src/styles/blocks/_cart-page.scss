@@ -1,0 +1,54 @@
+.cart-page {
+    min-height: 600px;
+    &__message {
+        color: $light-grey-characters;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+    &__section-title {
+        font-size: 22px;
+        font-weight: 600;
+        padding: 20px 0;
+    }
+    &__item-table {
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 1px solid $light-grey;
+        padding: 5px 0;
+        color: $grey;
+
+    }
+    &__count {
+        font-size: 18px;
+        font-weight: 600;
+        width: 55%;
+    }
+    &__item-price {
+        color: inherit;
+        margin-left: auto;
+    }
+    &__item-quantity {
+        margin-left: 5px;
+        color: inherit;
+    }
+    &__summary {
+        margin-top: 38px;
+        border: 1px solid $light-grey;
+        &-main {
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            span {
+                display: block;
+                margin-left: auto;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+        &-footer {
+            padding: 25px;
+            background: #f2f2f2;
+        }
+    }
+}

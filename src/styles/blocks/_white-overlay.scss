@@ -1,0 +1,30 @@
+.white-overlay {
+    width: 100%;
+    min-height: 100vh;
+    // background: rgba(256,256,256, 0.5);
+    background: $black;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    z-index: 98;
+    // top: 0;
+    // visibility: hidden;
+}
+
+.white-overlay-enter {
+    opacity: 0;
+
+}
+
+.white-overlay-enter-active {
+    opacity: 0.3;
+    transition: opacity 300ms, transform 300ms
+}
+.white-overlay-exit {
+    opacity: 0.3;
+}
+.white-overlay-exit-active {
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms
+}
+

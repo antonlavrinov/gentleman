@@ -1,0 +1,214 @@
+@media screen and (max-width: 1200px) {
+    .homepage {
+        &__slider {
+            &-image {
+                height: 400px;
+            }
+        }
+        &__previews {
+            &-block {
+                height: 370px;
+            }
+        }
+    }
+    .catalog-collection__link-image {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+}
+
+
+
+// IPAD PRO 1024px
+   
+@media screen and (max-width: 991px) {
+    // .container {
+    //     width: 750px;
+    // }
+    .products-filter {
+        margin-bottom: 20px;
+    }
+    .homepage {
+        &__slider {
+            &-image {
+                height: 300px;
+            }
+        }
+        &__previews {
+            grid-column-gap: 10px;
+            &-block {
+                height: 270px;
+                background-position: center !important;
+            }
+        }
+
+    }
+    // .header__list {
+    //     display: none;
+    // }
+    .header__links {
+        margin-left: auto;
+        margin-right: 10px;
+        svg {
+            width: 30px;
+            height: 24px;
+            padding: 0;
+            
+        }
+    }
+    .header__link {
+        padding: 0;
+        margin-right: 5px;
+        margin-top: -4px;
+        span {
+            top: -10px !important;
+            right: 2px !important;
+            left: auto;
+        }
+    }
+    .header__logo {
+        font-size: 40px;
+    }
+    .header__block {
+        display: flex;
+        align-items: center;
+    }
+    .additional-space {
+        height: 5px;
+    }
+    .hamburger {
+        display: block;
+        width: 30px;
+        fill: black;
+        margin-top: -5px;
+        z-index: 5;
+        user-select: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .header__link-title {
+        display: none;
+    }
+    .header__sections {
+
+        position: fixed;
+        background: rgba(256,256,256,0.95);
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .header__sections_active {
+        display: block;
+        top: 0;
+        ul {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            a {
+                font-size: 25px;
+                text-transform: uppercase;
+                padding-bottom: 30px;
+                letter-spacing: 0.1em;
+                &:hover {
+                    letter-spacing: 0.1em;
+                    font-size: 25px;
+                }
+            }
+            li {
+                div {
+                    display: none;
+                }
+            }
+        }
+
+    }
+        
+}
+
+
+
+
+// IPAD
+@media (max-width: 768px) {
+    .section-collection {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer {
+        &__block {
+            width: 100%;
+            flex-direction: column;
+            padding: 40px 0 40px;
+            height: 300px;
+            // background: white;
+        }
+    }
+    .homepage {
+        &__slider {
+            &-image {
+                height: 230px;
+            }
+            &-btn { 
+
+
+                &-next {
+                    svg {
+                        width: 10px;
+                    }
+                    width: 40px;
+                    height: 40px;
+
+
+                }
+                &-prev {
+                    width: 40px;
+                    height: 40px;
+                    svg {
+                        width: 10px;
+                    }
+                }
+    
+            }
+        }
+        &__previews {
+            grid-column-gap: 10px;
+            &-block {
+                height: 205px;
+            }
+        }
+
+        
+    }
+    .product-item {
+        width: 50%;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .homepage {
+        &__slider {
+            &-image {
+                background-position: center !important;
+            }
+        }
+    }
+}
+
+ 
+
+// IPHONE_X IPHONE_6/7/8 PLUS  
+// @media only screen and (max-width: 480px) {
+
+
+// }
+
+
+        
+//IPHONE_5S/SE   GALAXY_S5
+// @media only screen and (max-width: 362px)

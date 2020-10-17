@@ -1,0 +1,23 @@
+.breadcrumbs {
+    color: $light-grey-characters;
+    margin-bottom: 25px;
+    &__link {
+        margin-right: 15px;
+        display: inline-block;
+        &:after {
+            content: '/';
+            padding-left: 15px;
+            
+        }
+        &:last-child::after {
+            content: '';
+
+
+        }
+        span {
+            font-size: 11px;
+            color: inherit;
+
+        }
+    }
+}

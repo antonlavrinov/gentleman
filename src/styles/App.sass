@@ -1,0 +1,69 @@
+//import variables
+@import './base/_variables';
+
+@font-face 
+    font-family: 'Museo Sans'
+    src: url('../fonts/MuseoSansCyrl-500.eot')
+    src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+    url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
+    url('../fonts/MuseoSansCyrl-500.ttf') format('truetype'),
+    url('../fonts/MuseoSansCyrl-500.svg#MuseoSansCyrl-500') format('svg')
+    font-weight: 500
+    font-style: normal
+
+*   
+    margin: 0
+    padding: 0
+    box-sizing: border-box 
+    letter-spacing: .070em
+    font-family: 'Plump', sans-serif
+
+body
+    height: 100%
+    width: 100%
+    
+
+.container
+    width: 980px
+    margin: 0 auto
+    position: relative
+
+
+img 
+    align-self: start
+
+
+p
+    margin: 0
+    padding: 0
+
+input, input:hover, input:active, input:focus
+    outline: none
+
+ul, li 
+	display: block
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+
+div, p, a, span, input, form, button
+    box-sizing: border-box
+
+.App 
+    height: 100%
+#root
+    height: 100%
+
+a
+    text-decoration: none
+
+html
+    height: 100%
+
+
+//import blocks
+@import './blocks/_footer';
+
+//import media
+@import './base/_media';

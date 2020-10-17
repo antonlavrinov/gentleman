@@ -1,0 +1,141 @@
+.search-dropdown {
+    position: absolute;
+    width: 100%;
+    background: white;
+    z-index: 101;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+    height: 75px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    &_disabled {
+        height: 0px;
+    }  // transition: opacity 300ms, transform 300ms;
+    &__block {
+
+        display: flex;
+        // justify-content: spa;
+        align-items: center;
+
+        // &_disabled {
+        //     // transition: all 0.3s ease;
+        //     opacity: 0;
+            
+        // }
+    }
+}
+
+
+.exit-icon {
+    height: 35px;
+    width: 35px;
+    padding: 10px 10px ;
+    
+    &:hover {
+        // display: block;
+
+        cursor: pointer;
+    }
+}
+
+.search-form {
+    // padding-bottom: 15px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    // margin-right: 1%;
+
+    &__exit {
+        display: block;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding-bottom: 15px;
+        
+
+        // min-height: 100px;
+
+    }
+    &__search {
+        // margin: 15px 0;
+        padding: 10px 15px;
+        width: 100%;
+        color: $black;
+        border-radius: 5px;
+        // height: 50px;
+
+        // text-transform: uppercase;
+        
+        border: 1px solid $light-grey;
+         
+
+    }
+    &__button {
+        background: none;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+    }
+    &__icon {
+        // position: absolute;
+        // right: 30px;
+        // top: 10px;
+        height: 100%;
+        width: 100%;
+        fill: $light-grey;
+    }
+}
+
+.search-form-enter {
+    opacity: 0;
+}
+
+.search-form-enter-active {
+    opacity: 1;
+    transition: opacity 800ms ease;
+}
+.search-form-exit {
+    opacity: 1;
+}
+.search-form-exit-active {
+    opacity: 0;
+    transition: opacity 1ms
+}
+
+.search-dropdown__block-enter {
+    // opacity: 1;
+    // height: 0px;
+    transition: height 300ms
+    
+
+
+}
+
+.search-dropdown__block-enter-active {
+    // opacity: 1;
+    // height: 50px;
+
+    transition: height 300ms
+    
+}
+
+.search-dropdown__block-exit {
+    // opacity: 1;
+    // height: 50px;
+    transition: height 300ms
+
+    // transition: opacity 300ms, transform 300ms, top 300ms;
+    
+}
+
+.search-dropdown__block-exit-active {
+    // opacity: 1;
+
+    // height: 0px;
+    transition: height 300ms
+    
+}

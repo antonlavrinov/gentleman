@@ -1,0 +1,22 @@
+.button {
+    &_google {
+        background: white;
+        font-size: 13px;
+        color: $grey;
+        text-transform: initial;
+        letter-spacing: 0.02rem;
+        border: 1px solid $light-grey;
+    }
+}
+
+.google-button {
+    position: relative;
+    display: block;
+
+    &__icon{
+        position: absolute;
+        top: 9px;
+        left: 15px;
+        width: 24px;
+    }
+}
