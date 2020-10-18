@@ -5,11 +5,17 @@ import styled from 'styled-components';
 
 const ImageWrapper = styled.div`
     position: relative;
-    height: 320px;
+    height: 380px;
     width: 100%;
     background-size: cover !important;
     transition: all 0.4s ease;
     background-position: center !important;
+    @media only screen and (max-width: 1200px) {
+        height: 320px;
+    }
+    @media only screen and (max-width: 758px) {
+        height: 55vw;
+    }
     ${props => props.product && `
         background: url(${props.product.imageLinks[0]});
         :hover {

@@ -30,10 +30,7 @@ const HomePage = () => {
                             navigation={{
                                 nextEl: '.homepage__slider-btn-next',
                                 prevEl: '.homepage__slider-btn-prev'
-                            }
-
-
-                            }
+                            }}
                             speed={500}
                             slidesPerView={1}
                             loop
@@ -43,11 +40,12 @@ const HomePage = () => {
                             }}
                             >
                                 <SwiperSlide>
-                                    <div style={{background: `url(${banner2})`, backgroundSize: 'cover'}} className="homepage__slider-image"></div>
+                                    <Link to="/search/Brian%20Dales" style={{background: `url(${banner2})`, backgroundSize: 'cover'}} className="homepage__slider-image"></Link>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div style={{background: `url(${banner3})`, backgroundSize: 'cover'}} className="homepage__slider-image"></div>
+                                    <Link to="/catalog/clothing/coats" style={{background: `url(${banner3})`, backgroundSize: 'cover'}} className="homepage__slider-image"></Link>
                                 </SwiperSlide>
+                                {/* /search/Brian%20Dales */}
                         </Swiper>
                         <div className="homepage__slider-buttons">
                            

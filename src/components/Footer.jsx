@@ -13,7 +13,7 @@ const Footer = () => {
             <Container>
                 <div className="footer__block">
                         <div className="creator">
-                            <a className="creator__link" target="_blank" rel="noopener noreferrer" href='https://github.com/antonlavrinov/Memory-Game'>
+                            <a className="creator__link" target="_blank" rel="noopener noreferrer" href='https://github.com/antonlavrinov/gentleman'>
                                 <FontAwesomeIcon icon={faGithub} size="2x"/>
                                 <div className="creator__name">
                                     <span className="creator__small-font">Created by</span> <br/>Anton Lavrinov

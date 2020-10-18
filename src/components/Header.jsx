@@ -29,8 +29,13 @@ const Header = ({toggleSignInDropdownVisible, toggleCartVisible, currentUser, ca
         setSearchDropdown(!searchDropdown)
     }
 
-    const toggleHamburgerIsOpen = () => {
-        setHamburgerIsOpen(!hamburgerIsOpen);
+    const toggleHamburgerIsOpen = (boolean) => {
+        if (typeof variable !== 'undefined') {
+            setHamburgerIsOpen(boolean);
+        } else {
+            setHamburgerIsOpen(!hamburgerIsOpen);
+        }
+        
     }
 
     return(
@@ -42,6 +47,7 @@ const Header = ({toggleSignInDropdownVisible, toggleCartVisible, currentUser, ca
 
                         <div className="header__logo-and-nav">
                             <Logo additionalClass="header__logo"/>
+                            <Link to="/" className="header__logo_mobile">G.</Link>
                             <nav className={`header__sections ${hamburgerIsOpen && "header__sections_active"}`}>
                                 {/* <ul className="header__list">
                                     {sections.map(((section, idx) => {
@@ -55,7 +61,7 @@ const Header = ({toggleSignInDropdownVisible, toggleCartVisible, currentUser, ca
                                         )
                                     }))}
                                 </ul> */}
-                                <ul className="header__list">
+                                <ul className="header__list" onClick={() => toggleHamburgerIsOpen(false)}>
                                     <li className="header__list-item" onClick={() => setSection(null)} onMouseEnter={() => setSection('clothing')} onMouseLeave={() => setSection(null)}>
                                         <Link className="header__list-link" to="/catalog/clothing">Одежда</Link>
                                         <HeaderDropdown sectionSelected={sectionMain} section={sectionMain === 'clothing' ? true : false }/>

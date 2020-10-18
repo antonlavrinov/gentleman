@@ -445,6 +445,38 @@ const PRODUCTS_DATA = [
 
         },
         {
+            id: '27a',
+            productName: 'Костюм классический Brian Dales',
+            category: 'suits',
+            imageLinks: ['/images/clothing/suits/08/MP002XM1RMZ8_10488363_1_v3_2x.jpg',
+                         '/images/clothing/suits/08/MP002XM1RMZ8_10488364_2_v3_2x.jpg',
+                         '/images/clothing/suits/08/MP002XM1RMZ8_10488365_3_v3_2x.jpg',
+                         '/images/clothing/suits/08/MP002XM1RMZ8_10488366_4_v3_2x.jpg'],
+            price: 42000,
+            sizes: ['50', '52', '54','56'],
+            color: ['серый'],
+            material: ['Шерсть '],
+            season: 'мульти',
+            description: 'Костюм от премиум-бренда выполнен из текстиля и состоит из пиджака и брюк. Особенности пиджака: застежка на пуговицах, два внутренних кармана, приталенный крой, тонкая жаккардовая подкладка. Особенности брюк: шлевки для ремня, застежка на молнии и крючке, стрелки, четыре кармана.'
+
+        },
+        {
+            id: '27b',
+            productName: 'Костюм Brian Dales',
+            category: 'suits',
+            imageLinks: ['/images/clothing/suits/09/MP002XM1KA5Z_11562185_1_v2_2x.jpg',
+                         '/images/clothing/suits/09/MP002XM1KA5Z_11562186_2_v2_2x.jpg',
+                         '/images/clothing/suits/09/MP002XM1KA5Z_11562187_3_v2_2x.jpg',
+                         '/images/clothing/suits/09/MP002XM1KA5Z_11562188_4_v2_2x.jpg'],
+            price: 28000,
+            sizes: ['56','58','60'],
+            color: ['серый'],
+            material: ['Вискоза '],
+            season: 'мульти',
+            description: 'Костюм выполнен из плотного текстиля. Особенности пиджака: полуприталенный крой, застежка на пуговицах, воротник с лацканами, один нагрудный карман, прорезные боковые карманы с лацканами, атласная подкладка. Особенности брюк: зауженный книзу крой, застежка на молнию и пуговицу, шлевки для ремня, два боковых кармана, два прорезных кармана с застежкой на пуговицу сзади.'
+
+        },
+        {
             id: '28',
             productName: 'Костюм классический Boss Novan6/Ben2',
             category: 'suits',
