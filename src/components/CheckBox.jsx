@@ -12,8 +12,7 @@ const CheckBox = ({label, ...otherProps}) => {
             <div className="checkbox__label noselect">
                 {label}
             </div>
-            {/* <input className="checkbox-icon" id="checkbox" type="checkbox" {...otherProps}/>
-            <label htmlFor="checkbox" className="checkbox-label">{label}</label> */}
+
             
         </div>
         

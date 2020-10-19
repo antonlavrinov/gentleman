@@ -14,11 +14,7 @@ import { selectFiltersResetKey } from '../redux/filters-reset/filters-reset.sele
 const CategoryPage = ({products, match, categoryLinks, filters, filtersResetKey}) => {
     // const [categoryProducts, setCategoryProducts] = useState([]) 
     const [childKey, setChildKey] = useState(Math.random())
-    // useEffect(() => {
-    //     setCategoryProducts(products)
-    //     console.log('PRODUCTS CHANGE', filtersResetKey)
-    // }, [products, filters]);
-    console.log(products)
+
     return (
 
 

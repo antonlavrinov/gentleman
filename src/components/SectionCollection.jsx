@@ -16,7 +16,7 @@ const SectionCollection = ({clothingCategory, shoesCategory, accessoryCategory, 
                     <Link className="section-collection__link" key={idx} to={category.linkUrl}>
                         <div className="section-collection__link-overlay">
                             <div className="section-collection__link-overlay-shadow"></div>
-                            <div style={{background: `url(${category.imageUrl})`, backgroundSize: 'cover'}} className="section-collection__link-image">
+                            <div style={{background: `url(${category.imageUrl})`}} className="section-collection__link-image">
                             </div>
                         </div>
                         <div className="section-collection__link-title">

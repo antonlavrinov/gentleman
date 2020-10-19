@@ -31,7 +31,7 @@ const PriceFilter = ({filterPrice, setFilterPrice, products, filtersResetKey}) =
         let maxValue = Math.max(...allPrice)
         setPriceRange({min: minValue, max: maxValue})
         setValue([minValue, maxValue])
-        console.log('EFECT', products)
+
         // setFilterPrice(price => price >= value[0] && price <= value[1])
     }, [])
 

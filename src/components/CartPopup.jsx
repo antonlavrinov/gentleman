@@ -10,7 +10,7 @@ import {withRouter} from 'react-router';
 const CartPopup = ({cartVisible, toggleCartVisible, cartItems, cartTotal, history}) => {
     const cartVisibility = cartVisible ? '' : 'cart-popup_disabled';
     return (
-        <React.Fragment>
+        <div className="cart-popup__wrapper">
             <div className={`cart-popup ${cartVisibility}`}>
                 <div className="cart-popup__exit" onClick={() => toggleCartVisible()}>
                     <div className="cart-popup__exit-icon">
@@ -68,7 +68,7 @@ const CartPopup = ({cartVisible, toggleCartVisible, cartItems, cartTotal, histor
                 <div className="overlay"></div>
             </CSSTransition>
 
-        </React.Fragment>
+        </div>
 
     )
 }
