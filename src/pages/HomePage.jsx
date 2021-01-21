@@ -17,10 +17,21 @@ import {Link} from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 const HomePage = () => {
+    // const [counter, setCounter] = useState(0)
+    // const counterRef = useRef(1)
+
+    // useEffect(() => {
+    //     counterRef.current++
+    // }, [counter])
 
 
     return (
+        
         <div className="homepage">
+            {/* <div>{counterRef.current}</div>
+            {console.log('update')}
+            {console.log(counterRef)}
+            <button onClick={() => setCounter(counter + 1)}>dfdf</button> */}
 
             <Row>
                 <Col>
