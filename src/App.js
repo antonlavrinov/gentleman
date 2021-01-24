@@ -14,7 +14,6 @@ import SignUpPage from './pages/SignUpPage';
 import SignInPage from './pages/SignInPage';
 import Account from './pages/Account';
 import { selectCurrentUser } from './redux/user/user.selectors';
-// import WhiteOverlay from './components/WhiteOverlay';
 import Footer from './components/Footer';
 import CartPopup from './components/CartPopup';
 import SignInDropdown from './components/SignInDropdown';
@@ -30,9 +29,6 @@ class App extends React.Component {
   componentDidMount() {
     const {setCurrentUser} = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
-      // setCurrentUser(user)
-      
-
       if(userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
         userRef.onSnapshot(snapShot => {
@@ -40,7 +36,6 @@ class App extends React.Component {
             id: snapShot.id,
             ...snapShot.data()
           })
-
         })
       } else {
         setCurrentUser(userAuth)
@@ -51,12 +46,6 @@ class App extends React.Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
-  // const [currentUser, setCurrentUser] = useState(null);
-  // // const [shop] = useState(SHOP_DATA);
-
-  // useEffect() {
-
-  // }\\
 
   render() {
     return (
@@ -65,7 +54,6 @@ class App extends React.Component {
         <Header/>
         <div className="additional-space"></div>
         <Container>
-          {/* <WhiteOverlay/> */}
           <Switch>
             <Route path="/" exact component={HomePage}/>
             <Route path="/catalog" component={CatalogPage}/>
@@ -99,8 +87,6 @@ class App extends React.Component {
         <CartPopup/>
         <SignInDropdown/>
         <Footer/>
-
-  
       </React.Fragment>
     )
   }

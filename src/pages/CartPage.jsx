@@ -1,13 +1,13 @@
 import React from 'react'
 import CartItem from '../components/CartItem'
-import {selectCartItems, selectCartItemsCount, selectCartTotal} from '../redux/cart/cart.selectors';
-import {connect} from 'react-redux';
+import { selectCartItems, selectCartItemsCount, selectCartTotal } from '../redux/cart/cart.selectors';
+import { connect } from 'react-redux';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import CustomButton from '../components/CustomButton';
 
 
-const CartPage = ({cartItems, cartCount, cartTotal}) => {
+const CartPage = ({ cartItems, cartCount, cartTotal }) => {
     return (
         <div className="cart-page">
             <div className="cart-page__section-title">Корзина</div>
@@ -21,11 +21,11 @@ const CartPage = ({cartItems, cartCount, cartTotal}) => {
                                 <div className="cart-page__item-price">Цена</div>
 
                             </div>
-                            
+
                             <div className="cart-page__items">
                                 {cartItems.map((item, idx) => {
                                     return (
-                                        <CartItem key={item.id} item={item}/>
+                                        <CartItem key={item.id} item={item} />
                                     )
                                 })}
                             </div>
@@ -45,10 +45,10 @@ const CartPage = ({cartItems, cartCount, cartTotal}) => {
 
                 </div>
             ) : (
-                <div className="cart-page__message">
-                    В корзине пока ничего нет
-                </div>
-            )} 
+                    <div className="cart-page__message">
+                        В корзине пока ничего нет
+                    </div>
+                )}
         </div>
     )
 }

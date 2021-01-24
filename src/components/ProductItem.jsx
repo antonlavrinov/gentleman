@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react';
-import {Link} from 'react-router-dom';
-import {ReactComponent as Eye} from '../assets/eye-icon.svg';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ReactComponent as Eye } from '../assets/eye-icon.svg';
 import styled from 'styled-components';
 
 const ImageWrapper = styled.div`
@@ -22,16 +22,10 @@ const ImageWrapper = styled.div`
             background: url(${props.product.imageLinks[1]});
         }
     `}
-
-
 `
 
 
-
-// "product-item__image"
-
-
-const ProductItem = ({product}) => {
+const ProductItem = ({ product }) => {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         const imgs = [];
@@ -46,28 +40,28 @@ const ProductItem = ({product}) => {
         imgs.forEach(src => {
             new Promise((resolve, reject) => {
                 const img = new Image();
-    
+
                 img.src = src;
                 img.onLoad = resolve();
                 img.onError = reject();
             })
         })
-    
+
         setIsLoading(false)
     }
 
     return (
-        
+
         <div className="product-item">
             <Link to={`/product/${product.id}`}>
 
                 {isLoading ? (
-                    <div style={{ background: '#dedede'}}></div>
+                    <div style={{ background: '#dedede' }}></div>
                 ) : (
-                    <ImageWrapper product={product}>
+                        <ImageWrapper product={product}>
 
-                    </ImageWrapper>
-                )}
+                        </ImageWrapper>
+                    )}
 
 
                 <div className="product-item__info">
@@ -81,7 +75,7 @@ const ProductItem = ({product}) => {
                     </div>
 
                     <div className="product-item__button">
-                        <Eye/> Подробнее
+                        <Eye /> Подробнее
                     </div>
                 </div>
 
@@ -89,7 +83,7 @@ const ProductItem = ({product}) => {
 
             </Link>
         </div>
-        
+
 
     )
 }

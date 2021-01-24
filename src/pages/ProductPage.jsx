@@ -1,18 +1,18 @@
-import React, {useState} from 'react';
-import {connect} from 'react-redux';
-import {selectProductById} from '../redux/products/products.selectors';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import { selectProductById } from '../redux/products/products.selectors';
 import CustomButton from '../components/CustomButton';
-import {addItem} from '../redux/cart/cart.actions';
+import { addItem } from '../redux/cart/cart.actions';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SwiperCore, { Thumbs } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
-import {Redirect} from 'react-router';
+import { Redirect } from 'react-router';
 
 SwiperCore.use([Thumbs]);
 
-const ProductPage = ({match, product, addItem}) => {
+const ProductPage = ({ match, product, addItem }) => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
     return (
         <>
@@ -21,38 +21,33 @@ const ProductPage = ({match, product, addItem}) => {
                     <Row>
                         <Col lg={6}>
                             <div className="product__slider">
-                                <Swiper 
+                                <Swiper
                                     className="product__slider-thumbs"
                                     slidesPerView={4}
                                     onSwiper={setThumbsSwiper}
                                     direction="vertical"
                                     noSwiping={false}
-                                    
-                                    >
-                                        {product.imageLinks.map((image, idx) => {
-                                            return (
-                                                <SwiperSlide key={idx} className="product__thumb-slide">
-                                                    <div className="product__thumb-image" style={{backgroundImage: `url(${image})`}}/>
-                                                </SwiperSlide>
-                                            )
-                                        })}
-
-
+                                >
+                                    {product.imageLinks.map((image, idx) => {
+                                        return (
+                                            <SwiperSlide key={idx} className="product__thumb-slide">
+                                                <div className="product__thumb-image" style={{ backgroundImage: `url(${image})` }} />
+                                            </SwiperSlide>
+                                        )
+                                    })}
                                 </Swiper>
                                 <Swiper
                                     className="product__slider-wrapper"
                                     thumbs={{ swiper: thumbsSwiper }}
                                     slidesPerView={1}
-                                    >
-                                        {product.imageLinks.map((image, idx) => {
-                                            return (
-                                                <SwiperSlide key={idx}>
-                                                    <img className="product__image" src={image} alt={`product${idx}`}/>
-                                                </SwiperSlide>
-                                            )
-                                        })}
-
-
+                                >
+                                    {product.imageLinks.map((image, idx) => {
+                                        return (
+                                            <SwiperSlide key={idx}>
+                                                <img className="product__image" src={image} alt={`product${idx}`} />
+                                            </SwiperSlide>
+                                        )
+                                    })}
                                 </Swiper>
                             </div>
                         </Col>
@@ -86,18 +81,14 @@ const ProductPage = ({match, product, addItem}) => {
                             </div>
                         </Col>
                     </Row>
-
-
-
-
                 </div>
             ) : (
-                <Redirect to="/"/>
-            )}
-        
-        
+                    <Redirect to="/" />
+                )}
+
+
         </>
-        
+
     )
 }
 

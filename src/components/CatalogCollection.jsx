@@ -1,9 +1,11 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import { selectSectionLinks } from '../redux/sections/section.selectors';
 import { Link } from 'react-router-dom'
 
-const CatalogCollection = ({match, sections}) => {
+
+const CatalogCollection = ({ match, sections }) => {
+
     return (
         <div className="catalog-collection">
             {sections.map((section, idx) => {
@@ -11,14 +13,14 @@ const CatalogCollection = ({match, sections}) => {
                     <Link className="catalog-collection__link" key={idx} to={section.linkUrl}>
                         <div className="catalog-collection__link-overlay">
                             <div className="catalog-collection__link-overlay-shadow"></div>
-                            <div style={{background: `url(${section.imageUrl})`, backgroundSize: '100%'}} className="catalog-collection__link-image">
-
+                            <div style={{ background: `url(${section.imageUrl})`, backgroundSize: '100%' }}
+                                className="catalog-collection__link-image">
                             </div>
                         </div>
 
-                            <div className="catalog-collection__link-title">
-                                {section.sectionTitle}
-                            </div>
+                        <div className="catalog-collection__link-title">
+                            {section.sectionTitle}
+                        </div>
                     </Link>
                 )
             })}

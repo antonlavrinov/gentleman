@@ -1,15 +1,14 @@
 import React from 'react';
 import SectionCollection from '../components/SectionCollection';
 import CategoryPage from './CategoryPage';
-import {Route} from 'react-router-dom';
-import {connect} from 'react-redux';
+import { Route } from 'react-router-dom';
+import { connect } from 'react-redux';
 import { selectSectionNavNames } from '../redux/sections/section.selectors';
-import {Redirect} from 'react-router';
+import { Redirect } from 'react-router';
 
 
-const SectionPage =({match, sectionLinks}) => {
-    return(
-
+const SectionPage = ({ match, sectionLinks }) => {
+    return (
         <>
             {sectionLinks.find((sectionLink => sectionLink === match.params.sectionName)) ? (
                 <div className="section-page">
@@ -17,11 +16,9 @@ const SectionPage =({match, sectionLinks}) => {
                     <Route path={`${match.path}/:categoryName`} component={CategoryPage} />
                 </div>
             ) : (
-                <Redirect to="/"/>
-            )}
-        
+                    <Redirect to="/" />
+                )}
         </>
-
     )
 }
 
